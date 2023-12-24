@@ -1,9 +1,11 @@
-Name: 
-- Ryan Mitchellin (301540810)
-- Michael Kwan (301541356)
+# Project: S-talk (Simple Talk)
 
-Project: s-talk
+## About
 
-Some concerns:
-- We only have 3 threads, which are keyboard sendThread, receiveAndPrintThread, keyboardThread.
-- When received a message from other users while typing some message, it output directly resulting in users input looks messy.
+S-talk is a two way communication that run locally using UDP with the help of pthreads and kernel-level threads in LINUX.
+
+## How to run
+Step 1: Run `make` in the terminal
+
+Step 2: Each user should run the following format
+>Format: `s-talk [my port number] [remote machine name] [remote port number]`
